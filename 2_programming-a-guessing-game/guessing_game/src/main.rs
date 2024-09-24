@@ -1,4 +1,5 @@
 use std::io;
+use rand;
 
 fn main() {
     println!("Guess the number!");
@@ -9,7 +10,7 @@ fn main() {
 
     io::stdin()
         .read_line(&mut guess)
-        // .expect("Failed to read line");
+        .expect("Failed to read line");
 
     println!("You guessed: {}", guess);
 }
